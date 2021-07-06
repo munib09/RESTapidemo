@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESTAPI Demo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+     <link rel="stylesheet" href="/static/css/index.css">
+</head>
+<body>
+<center>
+<div class="w3-container" >
+  <h2>A RESTAPI DEMO FOR GRAMENER</h2>
+  <p>Please add the below details and press submit!</p>
+
+  <div class="w3-card-4" style="width:50%;">
+    <header class="w3-container w3-blue">
+      <h1>RESTAPI DEMO</h1>
+    </header>
+
+    <div class="w3-container">
+      <form action="/" method="POST">
+<br><br>
+<div class="form-group">
+  <label for="operation">Select an Operation:</label>
+  <select name="operation" id="operation">
+    <option value="addition">Addition</option>
+    <option value="subtract">Subtract</option>
+    <option value="divide">Divide</option>
+    <option value="multiply">Multiply</option>
+  </select>
+  <br><br>
+  </div>
+</div>
+
+<div class="form-group">
+    <label for="number1">First Number</label>
+    <input type="number" required value="0" class="form-control" name="first" id="number1" >
+</div>
+<div class="form-group">
+    <label for="number2">Second Number</label>
+    <input type="number" required value="0" class="form-control" name="second" id="number2">
+</div>
+
+<div class="form-group"><button type="submit" class="btn btn-primary">Submit</button></div>
+<div class="form-group">Output is:<output>
+  {% for k,v in x.items() %}{{v}}{% endfor %}
+</output></div>
+<br>
+<center style="font-size: 14px;"><p><h6>Do you want to request for a new operation?</h6></p></center>
+<center><input onclick="window.location.href = '/add';" type="button" value="Add New" class="btn btn-primary" /></center>
+<br>
+</form>
+</div>
+</div>
+</div>
+
+
+</center>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
